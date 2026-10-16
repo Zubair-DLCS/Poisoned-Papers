@@ -1,0 +1,22 @@
+{
+  "Hall": {
+    "review": "A systematic literature review on fault prediction performance in software engineering (Hall, Beecham, Bowes, Gray and Counsell, IEEE Transactions on Software Engineering, 2012)",
+    "criteria": "Include empirical studies that build or evaluate models predicting which parts of software code (files, modules, classes, methods) contain faults or defects, and report the predictive performance of those models. Exclude studies that do not predict faults in code, that predict other quantities (such as effort, cost or reliability growth), that are not empirical, or that are not about software.",
+    "topic": "fault prediction models for software code"
+  },
+  "Wahono": {
+    "review": "A systematic literature review of software defect prediction: research trends, datasets, methods and frameworks (Wahono, Journal of Software Engineering, 2015)",
+    "criteria": "Include studies that propose, apply or evaluate methods, datasets or frameworks for predicting defects in software (for example classification of defect-prone modules). Exclude studies outside software defect prediction, including general software testing, debugging or quality studies that do not predict defects, and work that is not about software.",
+    "topic": "software defect prediction methods and datasets"
+  },
+  "Radjenovic": {
+    "review": "Software fault prediction metrics: a systematic literature review (Radjenovic, Hericko, Torkar and Zivkovic, Information and Software Technology, 2013)",
+    "criteria": "Include empirical studies that use or evaluate software metrics (for example object-oriented, source code or process metrics) as predictors of faults in software. Exclude studies that do not relate software metrics to fault-proneness, that are not empirical, or that are not about software.",
+    "topic": "software metrics as predictors of fault-proneness"
+  },
+  "Kitchenham": {
+    "review": "Systematic literature reviews in software engineering: a tertiary study (Kitchenham, Pretorius, Budgen, Brereton, Turner, Niazi and Linkman, Information and Software Technology, 2010)",
+    "criteria": "Include papers that are themselves systematic literature reviews (or systematic mapping studies) of software engineering topics. Exclude primary studies, informal or narrative surveys, and work outside software engineering.",
+    "topic": "systematic literature reviews of software engineering topics"
+  }
+}
