@@ -27,7 +27,7 @@ defences a tool builder could use.
 
 Two open models, Qwen2.5-7B and Llama-3.1-8B, served locally with Ollama at temperature 0.
 Each screened 80 real records (10 included and 10 excluded from each of the four reviews)
-under every attack and defence: 1,080 screening decisions per model. Raw decisions and
+under every attack, a control and every defence: 1,200 screening decisions per model. Raw decisions and
 replies are in [`results/`](results/).
 
 ## Finding 1: knocking a paper out is easy; slipping one in is not
@@ -43,6 +43,11 @@ flipped **every one** to exclude, for both models. A fake "note for automated sc
 tools" saying the record is a duplicate flipped 65% (Qwen) and 100% (Llama). Every one of
 those decisions gives "duplicate of an already screened study" as its reason. The models
 took the note at its word.
+
+**It is the instruction, not the extra text.** As a control, the same relevant papers got a
+harmless sentence instead ("The study was carried out as part of a research project at the
+authors' institution..."). It flipped **6 of 142** decisions to exclude (4%, 0–9% per model
+and defence). The plain command flipped **140 of 142**.
 
 One likely reason for the asymmetry: both models already lean towards excluding. On clean
 records they drop 95–100% of irrelevant papers but keep only 50–65% of relevant ones, so a
@@ -162,11 +167,9 @@ request limit, then `python src/run.py --provider groq --model <model>`.
 - **Small sample, two small models.** 80 records and two open 7–8B models. Each exclude-attack
   cell rests on 20–26 papers the agent included when clean. Larger or commercial models may
   resist better.
-- **No neutral control on included papers.** The experiment does not append a harmless
-  sentence to relevant papers, so it cannot say how much of the exclude effect any extra text
-  would cause. The replies suggest the instruction does the work (every duplicate-note flip
-  cites duplication, and include-direction text barely moves decisions), but a control would
-  settle it.
+- **One control sentence.** The harmless-sentence control rules out "any extra text" as the
+  cause, but it is one sentence at one position; a longer or more topical neutral sentence
+  could move decisions somewhat more.
 - **Software-engineering reviews only.** Medical reviews, where AI screening is most
   advanced, use more structured criteria and may behave differently.
 - **Final labels, not screening labels.** The released labels record the reviews' final

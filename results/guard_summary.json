@@ -7,6 +7,7 @@
   "authority_out": 1.0,
   "naive": 1.0,
   "naive_out": 1.0,
+  "neutral_out": 0.0006,
   "polite": 1.0,
   "relevance": 0.0006,
   "varied": 0.0006

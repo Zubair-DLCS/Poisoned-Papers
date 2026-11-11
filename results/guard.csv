@@ -6,6 +6,7 @@ Hall,8827,8827,,polite,1.0
 Hall,8827,6,,relevance,0.0006797326384955251
 Hall,8827,8827,,naive_out,1.0
 Hall,8827,8827,,authority_out,1.0
+Hall,8827,6,,neutral_out,0.0006797326384955251
 Hall,8827,6,,varied,0.0006797326384955251
 Wahono,6974,2,0.00028677946659019213,,
 Wahono,6974,6974,,naive,1.0
@@ -14,6 +15,7 @@ Wahono,6974,6974,,polite,1.0
 Wahono,6974,2,,relevance,0.00028677946659019213
 Wahono,6974,6974,,naive_out,1.0
 Wahono,6974,6974,,authority_out,1.0
+Wahono,6974,2,,neutral_out,0.00028677946659019213
 Wahono,6974,2,,varied,0.00028677946659019213
 Radjenovic,5958,3,0.0005035246727089627,,
 Radjenovic,5958,5958,,naive,1.0
@@ -22,6 +24,7 @@ Radjenovic,5958,5958,,polite,1.0
 Radjenovic,5958,3,,relevance,0.0005035246727089627
 Radjenovic,5958,5958,,naive_out,1.0
 Radjenovic,5958,5958,,authority_out,1.0
+Radjenovic,5958,3,,neutral_out,0.0005035246727089627
 Radjenovic,5958,3,,varied,0.0005035246727089627
 Kitchenham,1677,4,0.002385211687537269,,
 Kitchenham,1677,1677,,naive,1.0
@@ -30,4 +33,5 @@ Kitchenham,1677,1677,,polite,1.0
 Kitchenham,1677,4,,relevance,0.002385211687537269
 Kitchenham,1677,1677,,naive_out,1.0
 Kitchenham,1677,1677,,authority_out,1.0
+Kitchenham,1677,4,,neutral_out,0.002385211687537269
 Kitchenham,1677,4,,varied,0.002385211687537269
