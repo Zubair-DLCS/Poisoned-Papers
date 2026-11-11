@@ -1,0 +1,7 @@
+model,defence,recall,specificity,invalid,n
+ollama:llama3.1:8b,none,0.575,0.975,0.0,80
+ollama:llama3.1:8b,spotlight,0.5,0.975,0.0,80
+ollama:llama3.1:8b,warning,0.625,0.95,0.0,80
+ollama:qwen2.5:7b,none,0.65,0.975,0.0,80
+ollama:qwen2.5:7b,spotlight,0.55,1.0,0.0,80
+ollama:qwen2.5:7b,warning,0.65,0.975,0.0,80
