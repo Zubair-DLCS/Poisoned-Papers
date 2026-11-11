@@ -19,7 +19,8 @@ plt.rcParams.update({
 ATTACK_LABELS = {"naive": "Plain command\n(include)", "authority": "Fake note to\nscreening tools",
                  "polite": "Polite author\nstatement", "varied": "Ten other\nphrasings",
                  "relevance": "Relevance claim\n(no instruction)", "naive_out": "Plain command\n(exclude)",
-                 "authority_out": "Fake 'duplicate'\nnote (exclude)"}
+                 "authority_out": "Fake 'duplicate'\nnote (exclude)",
+                 "neutral_out": "Control: harmless\nsentence (no attack)"}
 DEF_LABELS = {"none": "No defence", "warning": "Warning in\nthe prompt", "spotlight": "Warning +\nspotlighting"}
 
 
@@ -54,7 +55,8 @@ def fig_attack_success():
         return
     a = pd.read_csv(p)
     models = sorted(a.model.unique())
-    order = ["naive", "authority", "polite", "varied", "relevance", "naive_out", "authority_out"]
+    order = ["naive", "authority", "polite", "varied", "relevance", "naive_out", "authority_out",
+             "neutral_out"]
     order = [o for o in order if o in set(a.attack)]
     defs = [d for d in ("none", "warning", "spotlight") if d in set(a.defence)]
     cmap = LinearSegmentedColormap.from_list("o", ["#fdf1ec", "#f6b79c", ORANGE, "#9c3a12"])
